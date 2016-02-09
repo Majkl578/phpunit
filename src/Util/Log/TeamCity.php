@@ -302,7 +302,7 @@ class PHPUnit_Util_Log_TeamCity extends PHPUnit_TextUI_ResultPrinter
      */
     private function printEvent($eventName, $params = [])
     {
-        $this->write("\n##teamcity[$eventName");
+        $this->write("##teamcity[$eventName");
 
         if ($this->flowId) {
             $params['flowId'] = $this->flowId;
